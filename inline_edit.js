@@ -184,7 +184,7 @@ var observer = new MutationObserver(function (mutations) {
                     case "ΚΩΔΙΚΟΣ":
                         $.ajax({
                             type: "POST",
-                            url: "Enter your back-end URL here",
+                            url: "/inline_edit.php",
                             data: {
                                 "product_code": new_val
                             },
@@ -242,7 +242,7 @@ $('#save_changes').click(() => {
     if (Data.length >= 1) {
         $.ajax({
             type: "POST",
-            url: "Enter your back-end URL here",
+            url: "/inline_edit.php",
             data: {
                 "data_array": Data
             },
